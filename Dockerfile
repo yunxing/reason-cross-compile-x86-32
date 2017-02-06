@@ -22,7 +22,7 @@ RUN eval `opam config env`
 
 RUN ARCH=i386 SUBARCH=default SYSTEM=linux_eabi \
 CCARCH=x86 TOOLCHAIN=x86-4.9 \
-TRIPLE=i686-linux-androideabi LEVEL=23 \
+TRIPLE=i686-linux-android LEVEL=23 \
 STLVER=4.9 STLARCH=x86 \
   opam install conf-android
 
