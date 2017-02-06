@@ -21,7 +21,7 @@ RUN sudo -u opam sh -c 'opam switch 4.02.3+32bit'
 RUN eval `opam config env`
 
 RUN ARCH=i386 SUBARCH=default SYSTEM=linux_eabi \
-CCARCH=x86 TOOLCHAIN=arm-linux-androideabi-4.9 \
+CCARCH=x86 TOOLCHAIN=x86-4.9 \
 TRIPLE=i686-linux-androideabi LEVEL=23 \
 STLVER=4.9 STLARCH=x86 \
   opam install conf-android
