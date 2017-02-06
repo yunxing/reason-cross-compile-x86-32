@@ -20,7 +20,7 @@ RUN sudo -u opam sh -c 'opam switch 4.02.3+32bit'
 
 RUN eval `opam config env`
 
-RUN ARCH=i386 SUBARCH=default SYSTEM=linux_eabi \
+RUN ARCH=i386 SUBARCH=default SYSTEM=linux_elf \
 CCARCH=x86 TOOLCHAIN=x86-4.9 \
 TRIPLE=i686-linux-android LEVEL=23 \
 STLVER=4.9 STLARCH=x86 \
